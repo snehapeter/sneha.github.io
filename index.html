@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=Theming Consulting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .highlight{
+            color:red;
+        }
+    </style>
+    <title>Theming Consulting Pvt Ltd</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Contact</a>
+            <a href="panel.html">Panel</a>
+            <a href="button.html">Button</a>
+        </header>
+        <hr/>    
+        <main>
+            <h2>Contact us</h2>
+            <p>
+                phone:
+                <a href="tel:"2357907763">2357907763</a>
+            </p>
+            <p>
+                Email:
+                <a href="mailto:"Theming@gmail.com">Theming@gmail.com</a>
+            </p>
+            <h2>Drop a message</h2>
+            <p>Please drop us a message by filling out this form and we will get back toyou within 2 working days</p>
+            <p>Fields marked with * are required</p>
+            <form action="submit.html" method="POST">
+                <!-- Name input -->
+                <div class="name">
+                <label for="name">Your name <span class="highlight">*</span></label>
+                <br />
+                <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="john doe"
+                required
+                />
+                </div>
+                <br/>
+
+            <div class="email">
+            <label for="email">Your email <span class="highlight">*</span></label>
+            <br />
+            <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="john.doe@example.com"
+            />
+            </div>
+            <br />
+                <!-- What to buy dropdown -->
+            <div class="buy">
+            <label for="buy"
+              >What are you looking to buy <span class="highlight">*</span></label
+            >
+            <br />
+            <select name="buy" id="buy">
+              <option value="" selected>- Choose one -</option>
+              <option value="blog">Blog</option>
+              <option value="store">Store</option>
+              <option value="game">Game</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <br />
+  
+          <!-- Platform support required -->
+          <fieldset>
+            <legend>
+              Platform you plan to support <span class="highlight">*</span>
+              <br />
+              <input
+                type="checkbox"
+                name="platform"
+                id="web"
+                value="web"
+                checked
+              />
+              <label for="web">Web</label>
+              <input type="checkbox" name="platform" id="mobile" value="mobile" />
+              <label for="mobile">Mobile</label>
+              <input
+                type="checkbox"
+                name="platform"
+                id="desktop"
+                value="Desktop"
+              />
+              <label for="desktop">Desktop</label>
+            </legend>
+          </fieldset>
+          <br />
+          <!-- Message textarea -->
+          <div class="message">
+            <label for="message">Message</label>
+            <br />
+            <textarea name="message" id="message"></textarea>
+          </div>
+  
+          <!-- Buttons -->
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+      <hr />
+      <footer>&copy; Theming</footer>
+    </body>
+</html>
+    
